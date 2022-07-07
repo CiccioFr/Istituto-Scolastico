@@ -1,3 +1,3 @@
 ## Struttura del programma:
-- [UML](./uml.md)
+- [UML](./UML.md)
 - [Struttura del Programma](./Struttura_Programma.md)
