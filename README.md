@@ -30,4 +30,4 @@
 --------
 * il DB deve già esistere, dati necessari: nome DB, account, PW
 
-query per ricreare il DB a questo [link](./SQL-Note.md) (oppure)[https://github.com/CiccioFr/Istituto-Scolastico/blob/main/SQL-Note.md]
+query per ricreare il DB a questo [link](./allegati/DB/Docenti.sql)
