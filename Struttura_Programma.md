@@ -1,5 +1,6 @@
-Struttura del Programma
-SDK: 13 - Oracle OpenJDK ver. 1.8.0_291
+## Struttura del Programma
+
+
 Language Level: SDK default (8 - Lambdas, type annotations etc.)
 Nome del Progetto: Scuola
 Classi:
