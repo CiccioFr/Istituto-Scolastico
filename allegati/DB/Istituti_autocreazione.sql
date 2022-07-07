@@ -29,8 +29,8 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `istituti`;
 CREATE TABLE IF NOT EXISTS `istituti` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `istituto_id` int(11) NOT NULL AUTO_INCREMENT,
+  `istituto_nome` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `istituti` (
 -- Dump dei dati per la tabella `istituti`
 --
 
-INSERT INTO `istituti` (`id`, `nome`) VALUES
+INSERT INTO `istituti` (`istituto_id`, `istituto_nome`) VALUES
 (1, 'scuolaUno'),
 (2, 'ScuolaDue');
 COMMIT;
