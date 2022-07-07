@@ -27,14 +27,14 @@ INSERT INTO
         `doc_data_nascita`,
         `doc_sesso`
     ) VALUE ('Caruso', 'Mizzega', '1977-02-18', 'm'),
-    ('Giovanna', 'D arco', '1431-05-30', 'f'),
-    ('Franco', 'Franchi', '1928-09-18', 'm'),
-    ('Ciccio', 'Ingrassia', '1922-10-05', 'm'),
-    ('Carlo', 'Magno', '742-04-02', 'm'),
-    ('Giulio', 'Cesare', '100-07-12', 'm'),
-    ('Alessandro', 'Manzoni', '1785-03-07', 'm'),
-    ('Isaac', 'Newton', '1643-01-04', 'm'),
-    ('Valeria', 'Bodina', '1981-07-27', 'f');
+            ('Giovanna', 'D arco', '1431-05-30', 'f'),
+            ('Franco', 'Franchi', '1928-09-18', 'm'),
+            ('Ciccio', 'Ingrassia', '1922-10-05', 'm'),
+            ('Carlo', 'Magno', '742-04-02', 'm'),
+            ('Giulio', 'Cesare', '100-07-12', 'm'),
+            ('Alessandro', 'Manzoni', '1785-03-07', 'm'),
+            ('Isaac', 'Newton', '1643-01-04', 'm'),
+            ('Valeria', 'Bodina', '1981-07-27', 'f');
 
 -- imposto Preside
 UPDATE `docenti` SET `doc_preside` = 1

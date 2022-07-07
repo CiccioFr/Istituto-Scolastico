@@ -13,11 +13,10 @@ START TRANSACTION;  -- Opzionale.   Richiede di specificare COMMIT o ROLLBACK.
 
     INSERT INTO
         `istituti` (`istituto_nome`)
-    VALUES
-        ('Pitagora'),
-        ('Leonardo'),
-        ('Marconi'),
-        ('Newton');
+    VALUES ('Pitagora'),
+            ('Leonardo'),
+            ('Marconi'),
+            ('Newton');
 
 COMMIT;   -- di default COMMIT, Processa le query. Necessario se presente START TRANSACTION; l'antagonista e' ROLLBACK.
 

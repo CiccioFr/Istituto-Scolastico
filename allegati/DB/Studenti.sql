@@ -22,11 +22,11 @@ INSERT INTO
         stud_cognome,
         stud_data_nascita,
         stud_sesso) 
-    VALUE ('Alberto', 'Verdone', 11041999, 'm'),
-    ('Mara', 'Green', 11041989, 'f'),
-    ('Francesco', 'Verdone', 30112005, 'm'),
-    ('Teresa', 'Brava', 06011998, 'f'),
-    ('Francesco', 'Riba', 07072002, 'm');
+    VALUE   ('Alberto', 'Verdone', 11041999, 'm'),
+            ('Mara', 'Green', 11041989, 'f'),
+            ('Francesco', 'Verdone', 30112005, 'm'),
+            ('Teresa', 'Brava', 06011998, 'f'),
+            ('Francesco', 'Riba', 07072002, 'm');
 
 INSERT INTO studenti (
         stud_nome,

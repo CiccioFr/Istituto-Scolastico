@@ -1,7 +1,7 @@
 package cicciofr.istitutoscolastico.controllers;
 
-import com.example.demo.models.Studente;
-import com.example.demo.models.repository.StudenteRepository;
+import cicciofr.istitutoscolastico.models.Studente;
+import cicciofr.istitutoscolastico.models.repository.StudenteRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

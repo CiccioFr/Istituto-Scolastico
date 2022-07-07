@@ -28,7 +28,7 @@ public class StudenteRepository {
             while (rs.next()){  // next restituisce True quando trova una riga
                 Studente st = new Studente(rs.getString("nome"),
                                             rs.getString("cognome"),
-                                            rs.getString("genere"));
+                        Integer.parseInt(rs.getString("eta")));
                 studenteList.add(st);
             }
             conn.close();   //chiude la connessione
@@ -53,7 +53,7 @@ public class StudenteRepository {
             preparedStatement.setString(1, studente.getNome());
             // possiamo inserire String o anche altro... .setAltro
             preparedStatement.setString(2, studente.getCognome());
-            preparedStatement.setString(3, studente.getGenere());
+            preparedStatement.setString(3, String.valueOf(studente.getEta()));
             int row = preparedStatement.executeUpdate();    //aggiorna ed esegue preparedStatement
             conn.close();   //chiude la connessione
             return ("studente " + studente.getNome() + " inserito").toUpperCase();    // return per un feedback
