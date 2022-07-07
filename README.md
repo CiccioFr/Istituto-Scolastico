@@ -30,4 +30,4 @@
 --------
 * il DB deve già esistere, dati necessari: nome DB, account, PW
 
-query per ricreare il DB a questo [link](./allegati/DB/Docenti.sql)
+query per ricreare il DB a questo [link](./allegati/DB/)
