@@ -39,4 +39,4 @@ build/
 *.out
 
 # file personali
-Token.*
+/Token.*
