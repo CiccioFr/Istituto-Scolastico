@@ -7,3 +7,5 @@ Il token per intelliJ IDEA deve avere:
 - gits      - SI
 
 ![attributi token](./Scopes define the access for personal token.png)
+
+PROVA
