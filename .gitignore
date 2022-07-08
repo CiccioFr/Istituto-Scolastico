@@ -37,3 +37,6 @@ build/
 
 # cartella out java
 *.out
+
+# file personali
+Token.*

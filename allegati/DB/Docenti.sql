@@ -1,5 +1,8 @@
 DROP TABLE IF EXISTS docenti;
 
+ALTER TABLE contacts
+  RENAME TO people;
+
 CREATE TABLE IF NOT EXISTS docenti (
     `doc_id` INT NOT NULL AUTO_INCREMENT,
     `doc_nome` VARCHAR(50) NOT NULL,
