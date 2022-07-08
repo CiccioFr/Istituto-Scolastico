@@ -11,10 +11,10 @@ CREATE TABLE IF NOT EXISTS studenti (
 ALTER TABLE
     `studenti` CHANGE `sesso` `stud_sesso` CHAR(1) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL;
 
-ALTER TABLE studenti ADD stud_data_nascita CHAR(8) NULL DEFAULT NULL 
-    AFTER stud_cognome;
-ALTER TABLE studenti ADD stud_classe CHAR(2) NULL DEFAULT NULL 
-    AFTER stud_sesso;
+ALTER TABLE studenti
+    ADD stud_data_nascita CHAR(8) NULL DEFAULT NULL AFTER stud_cognome,
+    ADD stud_corso VARCHAR(50) NULL DEFAULT NULL AFTER stud_sesso,
+    ADD stud_classe CHAR(2) NULL DEFAULT NULL AFTER stud_corso;
 
 INSERT INTO
     studenti (

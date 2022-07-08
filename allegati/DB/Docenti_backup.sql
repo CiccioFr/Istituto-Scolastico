@@ -8,21 +8,17 @@ CREATE TABLE IF NOT EXISTS docenti (
     `doc_materia` VARCHAR(50) NULL,
     PRIMARY KEY (`doc_id`)) ENGINE = InnoDB;
 
-ALTER TABLE docenti
-    ADD doc_data_nascita INT AFTER doc_cognome,
-    ADD doc_preside TINYINT NOT NULL DEFAULT 0,
---  ADD doc_preside BOOLEAN NOT NULL DEFAULT FALSE,
--- il tipo BOOLEAN lo accetta, ma non esiste in MySQL, lo strasforma in TINYINT
-    ADD doc_id_classe INT NULL DEFAULT NULL;
+ALTER TABLE docenti ADD doc_data_nascita INT AFTER doc_cognome;
+ALTER TABLE docenti ADD doc_preside TINYINT NOT NULL DEFAULT 0;
+-- ALTER TABLE docenti ADD doc_preside BOOLEAN NOT NULL DEFAULT FALSE;
+ALTER TABLE docenti ADD doc_materia INT NULL DEFAULT NULL;
+ALTER TABLE docenti ADD doc_id_classe INT NULL DEFAULT NULL;
 
 -- nella tabella 'docenti' Cambio nome attributo 'sesso' in 'doc_sesso'
-ALTER TABLE `docenti`
-    CHANGE `sesso` `doc_sesso` CHAR(1) NOT NULL;
+ALTER TABLE `docenti` CHANGE `sesso` `doc_sesso` CHAR(1) NOT NULL;
 
--- nella tabella 'docenti' Cambio tipo all'attributo 'doc_data_nascita'  da INTl in 'DATE'
--- ALTER TABLE `docenti` CHANGE `doc_data_nascita` `doc_data_nascita` DATE NULL DEFAULT NULL;  -- anche con CHANGE
-ALTER TABLE `docenti`
-    MODIFY `doc_data_nascita` DATE NULL DEFAULT NULL;
+-- nella tabella 'docenti' Cambio tipo all'attributo 'doc_data_nascita'  da INT(8) in 'DATE'
+ALTER TABLE `docenti` MODIFY `doc_data_nascita` DATE NULL DEFAULT NULL;
 
 INSERT INTO
     docenti (
