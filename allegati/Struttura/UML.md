@@ -1,9 +1,10 @@
-UML Progetto Scuola
-Persona
-    -   Attributi
-        -   nome        String
-        -   cognome     String
-        -   eta         Integer
+UML Progetto Scuola  
+Persona  
+
+    -   Attributi  
+        -   nome        String  
+        -   cognome     String  
+        -   eta         Integer  
 
         -   static  (nrPersoneCreate)   Integer
 
@@ -25,7 +26,8 @@ Persona
         -   static printNome       (persona) Persona
     -------------------------------------------------------
 
-Studente extend Persona
+Studente extend Persona  
+
     -   Attributi
         -   sezione                 char
         -   annoScolastico          Integer
@@ -58,6 +60,7 @@ Studente extend Persona
     -------------------------------------------------------
 
 Docente extend Persona
+
     -   Attributi
         -   classiSeguite   array<String>(sezione, annoScolastico)
     -   metodi
@@ -65,6 +68,7 @@ Docente extend Persona
     -------------------------------------------------------
 
 Bidello extend Persona
+
     -   Attributi
         -   classiDaPulire  array<String>(sezione, annoScolastico)
     -   metodi

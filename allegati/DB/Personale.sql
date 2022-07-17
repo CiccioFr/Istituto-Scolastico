@@ -5,10 +5,10 @@ CREATE TABLE IF NOT EXISTS personale (
     `per_nome` VARCHAR(50) NOT NULL,
     `per_cognome` VARCHAR(50) NOT NULL,
     `per_sesso` CHAR(1) NOT NULL,
-    `per_ruolo` VARCHAR(50) NOT NULL DEFAULT 'senza compiti',
+    `per_ruolo` VARCHAR(50) NOT NULL DEFAULT 'senza mansione',
     PRIMARY KEY (`per_id`)) ENGINE = InnoDB;
 
-ALTER TABLE personale ADD per_data_nascita DATE DEFAULT NULL;
+ALTER TABLE personale ADD per_data_nascita DATE DEFAULT NULL AFTER per_cognome;
     -- data_creazione timestamp not null default now(), 
 
 INSERT INTO personale (
