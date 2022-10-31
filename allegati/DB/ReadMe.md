@@ -3,7 +3,7 @@
   - Nome utente: **istituto**
   - password: **password**
 
-###Le tabelle possono essere ricreate eseguendo le query ai link sotto:  
+### Le tabelle possono essere ricreate eseguendo le query ai link sotto:  
 - query per ricreare il DB -> [query unica](./Istituti_autocreazione.sql)
 - query esercitative per ricreare le tabelle
     - Tabella [Istituti](./Istituti.sql)
